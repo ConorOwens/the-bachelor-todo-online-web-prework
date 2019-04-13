@@ -11,6 +11,7 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, info|
+    info.each do |
     if info["occupation"] == occupation
       return info["name"]
     end
