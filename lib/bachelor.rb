@@ -2,11 +2,7 @@ require "pry"
 
 def get_first_name_of_season_winner(data, season)
   # code here
-  data.each do |season_number, hash|
-    if season == season_number
-      hash.each do |attribute|
-        if attribute.include?("Winner")
-          return data[season]["name"]
+  data
         end
       end
     end
