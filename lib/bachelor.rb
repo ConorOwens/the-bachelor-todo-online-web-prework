@@ -24,8 +24,12 @@ end
 def count_contestants_by_hometown(data, hometown)
   count = 0
   data.each do |season, info|
-    if info["hometown"] == hometown
-      count += 1 
+    info.each do |hash|
+      hash.each do attribute, value|
+        if value == hometown
+          count += 1 
+        end
+      end
     end
   end
   count
