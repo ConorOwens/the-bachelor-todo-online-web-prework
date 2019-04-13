@@ -6,7 +6,8 @@ def get_first_name_of_season_winner(data, season)
     if season == season_number
       hash.each do |attribute|
         if attribute.include?("Winner")
-          
+          data[season]["name"]
+        end
       end
     end
   end
